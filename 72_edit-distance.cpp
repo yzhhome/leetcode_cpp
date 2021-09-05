@@ -13,7 +13,7 @@ int minDistance(string word1, string word2) {
     int l1 = word1.size();
     int l2 = word2.size();
 
-    // pdp初始化为全0的l1 * l2容器
+    // dp初始化为全0的l1 * l2容器
     vector<vector<int>> dp(l1 + 1, vector<int>(l2 + 1, 0));
 
     // 第0列初始化为[0, l1]
